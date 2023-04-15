@@ -1,7 +1,4 @@
 package com.example.demo.entity;
 
-public class Course {
-
-
-
+public class Coutse {
 }
