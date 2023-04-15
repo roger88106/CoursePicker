@@ -1,26 +1,16 @@
-package com.example.demo.entity;
+package com.example.demo.entity.PrimaryKeys;
 
-import com.example.demo.entity.PrimaryKeys.StudentCourseID;
+import java.io.Serializable;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "students_courses")
-@IdClass(StudentCourseID.class)
-public class StudentCourse {
-    @Id
-    @Column(name = "student_ID")
+public class StudentCourseID implements Serializable {
     private String studentID;
-
-    @Id
-    @Column(name = "course_ID")
     private String courseID;
 
     //================== 建構子 & Getter/Setter ==================
-    public StudentCourse() {
+    public StudentCourseID() {
     }
 
-    public StudentCourse(String studentID, String courseID) {
+    public StudentCourseID(String studentID, String courseID) {
         this.studentID = studentID;
         this.courseID = courseID;
     }
