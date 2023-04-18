@@ -9,4 +9,6 @@ import java.util.List;
 @Repository
 public interface CourseDAO extends JpaRepository<Course, String > {
     List<Course> findByCourseName(String name);
+
+
 }

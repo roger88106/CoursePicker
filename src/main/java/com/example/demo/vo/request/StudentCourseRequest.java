@@ -2,14 +2,14 @@ package com.example.demo.vo.request;
 
 public class StudentCourseRequest {
     private String studentID;
-    private String CourseID;
+    private String courseID;
 
     public StudentCourseRequest() {
     }
 
     public StudentCourseRequest(String studentID, String courseID) {
         this.studentID = studentID;
-        CourseID = courseID;
+        this.courseID = courseID;
     }
 
     public String getStudentID() {
@@ -21,10 +21,10 @@ public class StudentCourseRequest {
     }
 
     public String getCourseID() {
-        return CourseID;
+        return courseID;
     }
 
     public void setCourseID(String courseID) {
-        CourseID = courseID;
+        this.courseID = courseID;
     }
 }

@@ -73,8 +73,8 @@ class DemoApplicationTests {
 		System.out.println(studentService.selectCourse(new StudentCourseRequest("D01234567","c05")).getMsg());
 		System.out.println("\n------------------------------------------------------------------------------------------------\n");
 
-		CoursesResponse a = coursesService.selectCourse(new CoursesResponse("C03", null, null, null, null, null));
-		CoursesResponse b = coursesService.selectCourse(new CoursesResponse(null,"aaa",null,null,null,null));
+		CoursesResponse a = coursesService.searchCourse(new CoursesRequest("C03", null, null, null, null, null));
+		CoursesResponse b = coursesService.searchCourse(new CoursesRequest(null,"aaa",null,null,null,null));
 	}
 
 }
