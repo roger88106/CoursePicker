@@ -1,13 +1,13 @@
 package com.example.demo.vo.request;
 
-public class SelectCourseRequest {
+public class StudentCourseRequest {
     private String studentID;
     private String CourseID;
 
-    public SelectCourseRequest() {
+    public StudentCourseRequest() {
     }
 
-    public SelectCourseRequest(String studentID, String courseID) {
+    public StudentCourseRequest(String studentID, String courseID) {
         this.studentID = studentID;
         CourseID = courseID;
     }

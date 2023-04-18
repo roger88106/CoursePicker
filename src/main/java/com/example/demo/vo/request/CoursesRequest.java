@@ -9,14 +9,14 @@ public class CoursesRequest {
     private String courseID;
     private String courseName;
     private Integer courseWeek;
-    private LocalTime courseStart;
-    private LocalTime courseEnd;
+    private String courseStart;
+    private String courseEnd;
     private Integer credit;
 
     public CoursesRequest() {
     }
 
-    public CoursesRequest(String courseID, String courseName, Integer courseWeek, LocalTime courseStart, LocalTime courseEnd, Integer credit) {
+    public CoursesRequest(String courseID, String courseName, Integer courseWeek, String courseStart, String courseEnd, Integer credit) {
         this.courseID = courseID;
         this.courseName = courseName;
         this.courseWeek = courseWeek;
@@ -49,19 +49,19 @@ public class CoursesRequest {
         this.courseWeek = courseWeek;
     }
 
-    public LocalTime getCourseStart() {
+    public String getCourseStart() {
         return courseStart;
     }
 
-    public void setCourseStart(LocalTime courseStart) {
+    public void setCourseStart(String courseStart) {
         this.courseStart = courseStart;
     }
 
-    public LocalTime getCourseEnd() {
+    public String getCourseEnd() {
         return courseEnd;
     }
 
-    public void setCourseEnd(LocalTime courseEnd) {
+    public void setCourseEnd(String courseEnd) {
         this.courseEnd = courseEnd;
     }
 

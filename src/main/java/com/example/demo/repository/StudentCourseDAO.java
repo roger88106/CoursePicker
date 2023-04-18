@@ -11,8 +11,5 @@ import java.util.List;
 public interface StudentCourseDAO extends JpaRepository<StudentCourse, StudentCourseID> {
     List<StudentCourse> findByStudentID(String studentID);
     List<StudentCourse> findByCourseID(String courseID);
-    long countByCourseID(String courseID);
-
-    //找學生ID跟課程ID都相同的資料(回傳單筆)
-    StudentCourse findByStudentIDAndCourseID(String studentID, String courseID);
+    long countByCourseID(String courseID);;
 }
